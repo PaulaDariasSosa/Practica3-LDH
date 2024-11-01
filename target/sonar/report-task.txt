@@ -1,0 +1,6 @@
+projectKey=Practica3_LDH
+serverUrl=http://localhost:9000
+serverVersion=10.6.0.92116
+dashboardUrl=http://localhost:9000/dashboard?id=Practica3_LDH
+ceTaskId=f1912591-257e-4f13-8024-3a62a9723e6c
+ceTaskUrl=http://localhost:9000/api/ce/task?id=f1912591-257e-4f13-8024-3a62a9723e6c

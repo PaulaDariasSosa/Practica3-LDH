@@ -3,7 +3,7 @@ package top;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
-import java.util.Random;
+import java.security.SecureRandom;
 
 public class TOPTWGRASP {
  public static double NO_EVALUATED = -1.0;
@@ -68,7 +68,9 @@ public class TOPTWGRASP {
     }
     
     public int aleatorySelectionRCL(int maxTRCL) {
-       Random r = new Random();
+        SecureRandom r = new SecureRandom();
+        byte bytes[] = new byte[20];
+        r.nextBytes(bytes);
        int low = 0;
        int high = maxTRCL;
        int posSelected = r.nextInt(high-low) + low;
