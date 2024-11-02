@@ -1,0 +1,542 @@
+\doxysection{top.\+TOPTW Class Reference}
+\hypertarget{classtop_1_1_t_o_p_t_w}{}\label{classtop_1_1_t_o_p_t_w}\index{top.TOPTW@{top.TOPTW}}
+
+
+Class to represent the \doxylink{classtop_1_1_t_o_p_t_w}{TOPTW} problem.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtop_1_1_t_o_p_t_w_a7eb342fe9e9856e9a8dad7ae0f888777}{TOPTW}} (int nodes, int routes)
+\begin{DoxyCompactList}\small\item\em Constructor of the class. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{classtop_1_1_t_o_p_t_w_a642e958056dc77c10d72831d633e2f49}{is\+Depot}} (int a)
+\begin{DoxyCompactList}\small\item\em Method to know if a node is a depot. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classtop_1_1_t_o_p_t_w_a137f100c5711b4b93cb5ae1711ddaf9a}{get\+Distance}} (int\mbox{[}$\,$\mbox{]} route)
+\begin{DoxyCompactList}\small\item\em Method to get the distance of a route. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classtop_1_1_t_o_p_t_w_a8e1710d766a0093f967bd89068649be7}{get\+Distance}} (Array\+List$<$ Integer $>$ route)
+\begin{DoxyCompactList}\small\item\em Method to get the distance of a route. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classtop_1_1_t_o_p_t_w_a2a0ad21770084fd267f05607d122a59a}{get\+Distance}} (Array\+List$<$ Integer $>$\mbox{[}$\,$\mbox{]} routes)
+\begin{DoxyCompactList}\small\item\em Method to get the distance of a route. \end{DoxyCompactList}\item 
+\Hypertarget{classtop_1_1_t_o_p_t_w_ad541e0a7d1aafc2b061e024c066dd662}\label{classtop_1_1_t_o_p_t_w_ad541e0a7d1aafc2b061e024c066dd662} 
+void {\bfseries calculate\+Distance\+Matrix} ()
+\begin{DoxyCompactList}\small\item\em Method to calculate the distance matrix. \end{DoxyCompactList}\item 
+\Hypertarget{classtop_1_1_t_o_p_t_w_a9363c6b94f247ce746510fe1036d143a}\label{classtop_1_1_t_o_p_t_w_a9363c6b94f247ce746510fe1036d143a} 
+double {\bfseries get\+Max\+Time\+Per\+Route} ()
+\begin{DoxyCompactList}\small\item\em Method to get the maximum time per route. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classtop_1_1_t_o_p_t_w_afbe8fd7e4e3b3d702768e01643558ddf}{set\+Max\+Time\+Per\+Route}} (double max\+Time\+Per\+Route)
+\begin{DoxyCompactList}\small\item\em Method to set the maximum time per route. \end{DoxyCompactList}\item 
+\Hypertarget{classtop_1_1_t_o_p_t_w_a2880cd94f79a8eeb732e99af69cdbbde}\label{classtop_1_1_t_o_p_t_w_a2880cd94f79a8eeb732e99af69cdbbde} 
+double {\bfseries get\+Max\+Routes} ()
+\begin{DoxyCompactList}\small\item\em Method to get the maximum number of routes. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classtop_1_1_t_o_p_t_w_ab8d4f9301cc2e3df582b94a5c0659011}{set\+Max\+Routes}} (double max\+Routes)
+\begin{DoxyCompactList}\small\item\em Method to set the maximum number of routes. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classtop_1_1_t_o_p_t_w_a98907c6bbeba9aba86727ecad5058261}{get\+POIs}} ()
+\begin{DoxyCompactList}\small\item\em Method to get the POIs. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classtop_1_1_t_o_p_t_w_aa48886efb5544475f15787bf2bee9242}{get\+Distance}} (int i, int j)
+\begin{DoxyCompactList}\small\item\em Method to get the distance between two nodes. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classtop_1_1_t_o_p_t_w_a3f724d2f10d5174c70748449a291ad86}{get\+Time}} (int i, int j)
+\begin{DoxyCompactList}\small\item\em Method to get the time between two nodes. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classtop_1_1_t_o_p_t_w_a81c3893424cfce15442b001571a18283}{get\+Nodes}} ()
+\begin{DoxyCompactList}\small\item\em Method to get the nodes. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classtop_1_1_t_o_p_t_w_a862dd83897ca658bef8e413a24e3daef}{set\+Nodes}} (int nodes)
+\begin{DoxyCompactList}\small\item\em Method to set the nodes. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classtop_1_1_t_o_p_t_w_ab17563354a34944d14e4ac57f6613da6}{getX}} (int index)
+\begin{DoxyCompactList}\small\item\em Method to get the x coordinate of a node. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classtop_1_1_t_o_p_t_w_a14a7fc055b07f3fb564666ad4ff12084}{setX}} (int index, double x)
+\begin{DoxyCompactList}\small\item\em Method to set the x coordinate of a node. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classtop_1_1_t_o_p_t_w_a3a39395dfc3d6360273580f177bede7a}{getY}} (int index)
+\begin{DoxyCompactList}\small\item\em Method to get the y coordinate of a node. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classtop_1_1_t_o_p_t_w_a8318436161579a8b9050a657ca63c5e0}{setY}} (int index, double y)
+\begin{DoxyCompactList}\small\item\em Method to set the y coordinate of a node. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classtop_1_1_t_o_p_t_w_ad028d42f72214373efca074483462837}{get\+Score}} (int index)
+\begin{DoxyCompactList}\small\item\em Method to get the score of a node. \end{DoxyCompactList}\item 
+\Hypertarget{classtop_1_1_t_o_p_t_w_a19a357f4266e806d76516dfa4b7f7688}\label{classtop_1_1_t_o_p_t_w_a19a357f4266e806d76516dfa4b7f7688} 
+double\mbox{[}$\,$\mbox{]} {\bfseries get\+Score} ()
+\begin{DoxyCompactList}\small\item\em Method to get the score of a node. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classtop_1_1_t_o_p_t_w_af9ea3e6941f3ebf4c4415a563d824d89}{set\+Score}} (int index, double score)
+\begin{DoxyCompactList}\small\item\em Method to set the score of a node. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classtop_1_1_t_o_p_t_w_a4e74b10708b232a801a4ad147892b70a}{get\+Ready\+Time}} (int index)
+\begin{DoxyCompactList}\small\item\em Method to get the ready time of a node. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classtop_1_1_t_o_p_t_w_a97c54405c2ffff1b04371ee42acb1dff}{set\+Ready\+Time}} (int index, double ready\+Time)
+\begin{DoxyCompactList}\small\item\em Method to set the ready time of a node. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classtop_1_1_t_o_p_t_w_a0d14aca2e33a8fb1eb08013c3d55abfa}{get\+Due\+Time}} (int index)
+\begin{DoxyCompactList}\small\item\em Method to get the due time of a node. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classtop_1_1_t_o_p_t_w_a0576cf2e4c066aae858a2487ada18785}{set\+Due\+Time}} (int index, double due\+Time)
+\begin{DoxyCompactList}\small\item\em Method to set the due time of a node. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classtop_1_1_t_o_p_t_w_a06b2b40d137f16bdda21c734d3ea8ac7}{get\+Service\+Time}} (int index)
+\begin{DoxyCompactList}\small\item\em Method to get the service time of a node. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classtop_1_1_t_o_p_t_w_adce95dbc2b525cbbde383e0b950f874e}{set\+Service\+Time}} (int index, double service\+Time)
+\begin{DoxyCompactList}\small\item\em Method to set the service time of a node. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classtop_1_1_t_o_p_t_w_abfba541876921de9ec5a63373c056446}{get\+Vehicles}} ()
+\begin{DoxyCompactList}\small\item\em Method to get the vehicles. \end{DoxyCompactList}\item 
+\Hypertarget{classtop_1_1_t_o_p_t_w_a339572ea7e09f0b54ee9221710a41e3d}\label{classtop_1_1_t_o_p_t_w_a339572ea7e09f0b54ee9221710a41e3d} 
+String {\bfseries to\+String} ()
+\begin{DoxyCompactList}\small\item\em Method to convert the \doxylink{classtop_1_1_t_o_p_t_w}{TOPTW} object to a string. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classtop_1_1_t_o_p_t_w_a89fe6a60b12960241afe3381b558853b}{add\+Node}} ()
+\begin{DoxyCompactList}\small\item\em Method add a node. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classtop_1_1_t_o_p_t_w_abc8ba9eecbd30ef1941a21418259045f}{add\+Node\+Depot}} ()
+\begin{DoxyCompactList}\small\item\em Method to add a node to the depot. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class to represent the \doxylink{classtop_1_1_t_o_p_t_w}{TOPTW} problem. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtop_1_1_t_o_p_t_w_a7eb342fe9e9856e9a8dad7ae0f888777}\index{top.TOPTW@{top.TOPTW}!TOPTW@{TOPTW}}
+\index{TOPTW@{TOPTW}!top.TOPTW@{top.TOPTW}}
+\doxysubsubsection{\texorpdfstring{TOPTW()}{TOPTW()}}
+{\footnotesize\ttfamily \label{classtop_1_1_t_o_p_t_w_a7eb342fe9e9856e9a8dad7ae0f888777} 
+top.\+TOPTW.\+TOPTW (\begin{DoxyParamCaption}\item[{int}]{nodes}{, }\item[{int}]{routes}{}\end{DoxyParamCaption})}
+
+
+
+Constructor of the class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nodes} & \\
+\hline
+{\em routes} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtop_1_1_t_o_p_t_w_a89fe6a60b12960241afe3381b558853b}\index{top.TOPTW@{top.TOPTW}!addNode@{addNode}}
+\index{addNode@{addNode}!top.TOPTW@{top.TOPTW}}
+\doxysubsubsection{\texorpdfstring{addNode()}{addNode()}}
+{\footnotesize\ttfamily \label{classtop_1_1_t_o_p_t_w_a89fe6a60b12960241afe3381b558853b} 
+int top.\+TOPTW.\+add\+Node (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Method add a node. 
+
+\begin{DoxyReturn}{Returns}
+int value. 
+\end{DoxyReturn}
+\Hypertarget{classtop_1_1_t_o_p_t_w_abc8ba9eecbd30ef1941a21418259045f}\index{top.TOPTW@{top.TOPTW}!addNodeDepot@{addNodeDepot}}
+\index{addNodeDepot@{addNodeDepot}!top.TOPTW@{top.TOPTW}}
+\doxysubsubsection{\texorpdfstring{addNodeDepot()}{addNodeDepot()}}
+{\footnotesize\ttfamily \label{classtop_1_1_t_o_p_t_w_abc8ba9eecbd30ef1941a21418259045f} 
+int top.\+TOPTW.\+add\+Node\+Depot (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Method to add a node to the depot. 
+
+\begin{DoxyReturn}{Returns}
+int value. 
+\end{DoxyReturn}
+\Hypertarget{classtop_1_1_t_o_p_t_w_a8e1710d766a0093f967bd89068649be7}\index{top.TOPTW@{top.TOPTW}!getDistance@{getDistance}}
+\index{getDistance@{getDistance}!top.TOPTW@{top.TOPTW}}
+\doxysubsubsection{\texorpdfstring{getDistance()}{getDistance()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily \label{classtop_1_1_t_o_p_t_w_a8e1710d766a0093f967bd89068649be7} 
+double top.\+TOPTW.\+get\+Distance (\begin{DoxyParamCaption}\item[{Array\+List$<$ Integer $>$}]{route}{}\end{DoxyParamCaption})}
+
+
+
+Method to get the distance of a route. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em route} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classtop_1_1_t_o_p_t_w_a2a0ad21770084fd267f05607d122a59a}\index{top.TOPTW@{top.TOPTW}!getDistance@{getDistance}}
+\index{getDistance@{getDistance}!top.TOPTW@{top.TOPTW}}
+\doxysubsubsection{\texorpdfstring{getDistance()}{getDistance()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily \label{classtop_1_1_t_o_p_t_w_a2a0ad21770084fd267f05607d122a59a} 
+double top.\+TOPTW.\+get\+Distance (\begin{DoxyParamCaption}\item[{Array\+List$<$ Integer $>$\mbox{[}$\,$\mbox{]}}]{routes}{}\end{DoxyParamCaption})}
+
+
+
+Method to get the distance of a route. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em routes} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classtop_1_1_t_o_p_t_w_aa48886efb5544475f15787bf2bee9242}\index{top.TOPTW@{top.TOPTW}!getDistance@{getDistance}}
+\index{getDistance@{getDistance}!top.TOPTW@{top.TOPTW}}
+\doxysubsubsection{\texorpdfstring{getDistance()}{getDistance()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily \label{classtop_1_1_t_o_p_t_w_aa48886efb5544475f15787bf2bee9242} 
+double top.\+TOPTW.\+get\+Distance (\begin{DoxyParamCaption}\item[{int}]{i}{, }\item[{int}]{j}{}\end{DoxyParamCaption})}
+
+
+
+Method to get the distance between two nodes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & \\
+\hline
+{\em j} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double value. 
+\end{DoxyReturn}
+\Hypertarget{classtop_1_1_t_o_p_t_w_a137f100c5711b4b93cb5ae1711ddaf9a}\index{top.TOPTW@{top.TOPTW}!getDistance@{getDistance}}
+\index{getDistance@{getDistance}!top.TOPTW@{top.TOPTW}}
+\doxysubsubsection{\texorpdfstring{getDistance()}{getDistance()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily \label{classtop_1_1_t_o_p_t_w_a137f100c5711b4b93cb5ae1711ddaf9a} 
+double top.\+TOPTW.\+get\+Distance (\begin{DoxyParamCaption}\item[{int\mbox{[}$\,$\mbox{]}}]{route}{}\end{DoxyParamCaption})}
+
+
+
+Method to get the distance of a route. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em route} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classtop_1_1_t_o_p_t_w_a0d14aca2e33a8fb1eb08013c3d55abfa}\index{top.TOPTW@{top.TOPTW}!getDueTime@{getDueTime}}
+\index{getDueTime@{getDueTime}!top.TOPTW@{top.TOPTW}}
+\doxysubsubsection{\texorpdfstring{getDueTime()}{getDueTime()}}
+{\footnotesize\ttfamily \label{classtop_1_1_t_o_p_t_w_a0d14aca2e33a8fb1eb08013c3d55abfa} 
+double top.\+TOPTW.\+get\+Due\+Time (\begin{DoxyParamCaption}\item[{int}]{index}{}\end{DoxyParamCaption})}
+
+
+
+Method to get the due time of a node. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double value. 
+\end{DoxyReturn}
+\Hypertarget{classtop_1_1_t_o_p_t_w_a81c3893424cfce15442b001571a18283}\index{top.TOPTW@{top.TOPTW}!getNodes@{getNodes}}
+\index{getNodes@{getNodes}!top.TOPTW@{top.TOPTW}}
+\doxysubsubsection{\texorpdfstring{getNodes()}{getNodes()}}
+{\footnotesize\ttfamily \label{classtop_1_1_t_o_p_t_w_a81c3893424cfce15442b001571a18283} 
+int top.\+TOPTW.\+get\+Nodes (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Method to get the nodes. 
+
+\begin{DoxyReturn}{Returns}
+int value. 
+\end{DoxyReturn}
+\Hypertarget{classtop_1_1_t_o_p_t_w_a98907c6bbeba9aba86727ecad5058261}\index{top.TOPTW@{top.TOPTW}!getPOIs@{getPOIs}}
+\index{getPOIs@{getPOIs}!top.TOPTW@{top.TOPTW}}
+\doxysubsubsection{\texorpdfstring{getPOIs()}{getPOIs()}}
+{\footnotesize\ttfamily \label{classtop_1_1_t_o_p_t_w_a98907c6bbeba9aba86727ecad5058261} 
+int top.\+TOPTW.\+get\+POIs (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Method to get the POIs. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classtop_1_1_t_o_p_t_w_a4e74b10708b232a801a4ad147892b70a}\index{top.TOPTW@{top.TOPTW}!getReadyTime@{getReadyTime}}
+\index{getReadyTime@{getReadyTime}!top.TOPTW@{top.TOPTW}}
+\doxysubsubsection{\texorpdfstring{getReadyTime()}{getReadyTime()}}
+{\footnotesize\ttfamily \label{classtop_1_1_t_o_p_t_w_a4e74b10708b232a801a4ad147892b70a} 
+double top.\+TOPTW.\+get\+Ready\+Time (\begin{DoxyParamCaption}\item[{int}]{index}{}\end{DoxyParamCaption})}
+
+
+
+Method to get the ready time of a node. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double value. 
+\end{DoxyReturn}
+\Hypertarget{classtop_1_1_t_o_p_t_w_ad028d42f72214373efca074483462837}\index{top.TOPTW@{top.TOPTW}!getScore@{getScore}}
+\index{getScore@{getScore}!top.TOPTW@{top.TOPTW}}
+\doxysubsubsection{\texorpdfstring{getScore()}{getScore()}}
+{\footnotesize\ttfamily \label{classtop_1_1_t_o_p_t_w_ad028d42f72214373efca074483462837} 
+double top.\+TOPTW.\+get\+Score (\begin{DoxyParamCaption}\item[{int}]{index}{}\end{DoxyParamCaption})}
+
+
+
+Method to get the score of a node. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double value. 
+\end{DoxyReturn}
+\Hypertarget{classtop_1_1_t_o_p_t_w_a06b2b40d137f16bdda21c734d3ea8ac7}\index{top.TOPTW@{top.TOPTW}!getServiceTime@{getServiceTime}}
+\index{getServiceTime@{getServiceTime}!top.TOPTW@{top.TOPTW}}
+\doxysubsubsection{\texorpdfstring{getServiceTime()}{getServiceTime()}}
+{\footnotesize\ttfamily \label{classtop_1_1_t_o_p_t_w_a06b2b40d137f16bdda21c734d3ea8ac7} 
+double top.\+TOPTW.\+get\+Service\+Time (\begin{DoxyParamCaption}\item[{int}]{index}{}\end{DoxyParamCaption})}
+
+
+
+Method to get the service time of a node. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double value. 
+\end{DoxyReturn}
+\Hypertarget{classtop_1_1_t_o_p_t_w_a3f724d2f10d5174c70748449a291ad86}\index{top.TOPTW@{top.TOPTW}!getTime@{getTime}}
+\index{getTime@{getTime}!top.TOPTW@{top.TOPTW}}
+\doxysubsubsection{\texorpdfstring{getTime()}{getTime()}}
+{\footnotesize\ttfamily \label{classtop_1_1_t_o_p_t_w_a3f724d2f10d5174c70748449a291ad86} 
+double top.\+TOPTW.\+get\+Time (\begin{DoxyParamCaption}\item[{int}]{i}{, }\item[{int}]{j}{}\end{DoxyParamCaption})}
+
+
+
+Method to get the time between two nodes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & \\
+\hline
+{\em j} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double value. 
+\end{DoxyReturn}
+\Hypertarget{classtop_1_1_t_o_p_t_w_abfba541876921de9ec5a63373c056446}\index{top.TOPTW@{top.TOPTW}!getVehicles@{getVehicles}}
+\index{getVehicles@{getVehicles}!top.TOPTW@{top.TOPTW}}
+\doxysubsubsection{\texorpdfstring{getVehicles()}{getVehicles()}}
+{\footnotesize\ttfamily \label{classtop_1_1_t_o_p_t_w_abfba541876921de9ec5a63373c056446} 
+int top.\+TOPTW.\+get\+Vehicles (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Method to get the vehicles. 
+
+\begin{DoxyReturn}{Returns}
+int value. 
+\end{DoxyReturn}
+\Hypertarget{classtop_1_1_t_o_p_t_w_ab17563354a34944d14e4ac57f6613da6}\index{top.TOPTW@{top.TOPTW}!getX@{getX}}
+\index{getX@{getX}!top.TOPTW@{top.TOPTW}}
+\doxysubsubsection{\texorpdfstring{getX()}{getX()}}
+{\footnotesize\ttfamily \label{classtop_1_1_t_o_p_t_w_ab17563354a34944d14e4ac57f6613da6} 
+double top.\+TOPTW.\+getX (\begin{DoxyParamCaption}\item[{int}]{index}{}\end{DoxyParamCaption})}
+
+
+
+Method to get the x coordinate of a node. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double value. 
+\end{DoxyReturn}
+\Hypertarget{classtop_1_1_t_o_p_t_w_a3a39395dfc3d6360273580f177bede7a}\index{top.TOPTW@{top.TOPTW}!getY@{getY}}
+\index{getY@{getY}!top.TOPTW@{top.TOPTW}}
+\doxysubsubsection{\texorpdfstring{getY()}{getY()}}
+{\footnotesize\ttfamily \label{classtop_1_1_t_o_p_t_w_a3a39395dfc3d6360273580f177bede7a} 
+double top.\+TOPTW.\+getY (\begin{DoxyParamCaption}\item[{int}]{index}{}\end{DoxyParamCaption})}
+
+
+
+Method to get the y coordinate of a node. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double value. 
+\end{DoxyReturn}
+\Hypertarget{classtop_1_1_t_o_p_t_w_a642e958056dc77c10d72831d633e2f49}\index{top.TOPTW@{top.TOPTW}!isDepot@{isDepot}}
+\index{isDepot@{isDepot}!top.TOPTW@{top.TOPTW}}
+\doxysubsubsection{\texorpdfstring{isDepot()}{isDepot()}}
+{\footnotesize\ttfamily \label{classtop_1_1_t_o_p_t_w_a642e958056dc77c10d72831d633e2f49} 
+boolean top.\+TOPTW.\+is\+Depot (\begin{DoxyParamCaption}\item[{int}]{a}{}\end{DoxyParamCaption})}
+
+
+
+Method to know if a node is a depot. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classtop_1_1_t_o_p_t_w_a0576cf2e4c066aae858a2487ada18785}\index{top.TOPTW@{top.TOPTW}!setDueTime@{setDueTime}}
+\index{setDueTime@{setDueTime}!top.TOPTW@{top.TOPTW}}
+\doxysubsubsection{\texorpdfstring{setDueTime()}{setDueTime()}}
+{\footnotesize\ttfamily \label{classtop_1_1_t_o_p_t_w_a0576cf2e4c066aae858a2487ada18785} 
+void top.\+TOPTW.\+set\+Due\+Time (\begin{DoxyParamCaption}\item[{int}]{index}{, }\item[{double}]{due\+Time}{}\end{DoxyParamCaption})}
+
+
+
+Method to set the due time of a node. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & \\
+\hline
+{\em due\+Time} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classtop_1_1_t_o_p_t_w_ab8d4f9301cc2e3df582b94a5c0659011}\index{top.TOPTW@{top.TOPTW}!setMaxRoutes@{setMaxRoutes}}
+\index{setMaxRoutes@{setMaxRoutes}!top.TOPTW@{top.TOPTW}}
+\doxysubsubsection{\texorpdfstring{setMaxRoutes()}{setMaxRoutes()}}
+{\footnotesize\ttfamily \label{classtop_1_1_t_o_p_t_w_ab8d4f9301cc2e3df582b94a5c0659011} 
+void top.\+TOPTW.\+set\+Max\+Routes (\begin{DoxyParamCaption}\item[{double}]{max\+Routes}{}\end{DoxyParamCaption})}
+
+
+
+Method to set the maximum number of routes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em max\+Routes} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classtop_1_1_t_o_p_t_w_afbe8fd7e4e3b3d702768e01643558ddf}\index{top.TOPTW@{top.TOPTW}!setMaxTimePerRoute@{setMaxTimePerRoute}}
+\index{setMaxTimePerRoute@{setMaxTimePerRoute}!top.TOPTW@{top.TOPTW}}
+\doxysubsubsection{\texorpdfstring{setMaxTimePerRoute()}{setMaxTimePerRoute()}}
+{\footnotesize\ttfamily \label{classtop_1_1_t_o_p_t_w_afbe8fd7e4e3b3d702768e01643558ddf} 
+void top.\+TOPTW.\+set\+Max\+Time\+Per\+Route (\begin{DoxyParamCaption}\item[{double}]{max\+Time\+Per\+Route}{}\end{DoxyParamCaption})}
+
+
+
+Method to set the maximum time per route. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em max\+Time\+Per\+Route} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classtop_1_1_t_o_p_t_w_a862dd83897ca658bef8e413a24e3daef}\index{top.TOPTW@{top.TOPTW}!setNodes@{setNodes}}
+\index{setNodes@{setNodes}!top.TOPTW@{top.TOPTW}}
+\doxysubsubsection{\texorpdfstring{setNodes()}{setNodes()}}
+{\footnotesize\ttfamily \label{classtop_1_1_t_o_p_t_w_a862dd83897ca658bef8e413a24e3daef} 
+void top.\+TOPTW.\+set\+Nodes (\begin{DoxyParamCaption}\item[{int}]{nodes}{}\end{DoxyParamCaption})}
+
+
+
+Method to set the nodes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nodes} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classtop_1_1_t_o_p_t_w_a97c54405c2ffff1b04371ee42acb1dff}\index{top.TOPTW@{top.TOPTW}!setReadyTime@{setReadyTime}}
+\index{setReadyTime@{setReadyTime}!top.TOPTW@{top.TOPTW}}
+\doxysubsubsection{\texorpdfstring{setReadyTime()}{setReadyTime()}}
+{\footnotesize\ttfamily \label{classtop_1_1_t_o_p_t_w_a97c54405c2ffff1b04371ee42acb1dff} 
+void top.\+TOPTW.\+set\+Ready\+Time (\begin{DoxyParamCaption}\item[{int}]{index}{, }\item[{double}]{ready\+Time}{}\end{DoxyParamCaption})}
+
+
+
+Method to set the ready time of a node. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & \\
+\hline
+{\em ready\+Time} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classtop_1_1_t_o_p_t_w_af9ea3e6941f3ebf4c4415a563d824d89}\index{top.TOPTW@{top.TOPTW}!setScore@{setScore}}
+\index{setScore@{setScore}!top.TOPTW@{top.TOPTW}}
+\doxysubsubsection{\texorpdfstring{setScore()}{setScore()}}
+{\footnotesize\ttfamily \label{classtop_1_1_t_o_p_t_w_af9ea3e6941f3ebf4c4415a563d824d89} 
+void top.\+TOPTW.\+set\+Score (\begin{DoxyParamCaption}\item[{int}]{index}{, }\item[{double}]{score}{}\end{DoxyParamCaption})}
+
+
+
+Method to set the score of a node. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & \\
+\hline
+{\em score} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classtop_1_1_t_o_p_t_w_adce95dbc2b525cbbde383e0b950f874e}\index{top.TOPTW@{top.TOPTW}!setServiceTime@{setServiceTime}}
+\index{setServiceTime@{setServiceTime}!top.TOPTW@{top.TOPTW}}
+\doxysubsubsection{\texorpdfstring{setServiceTime()}{setServiceTime()}}
+{\footnotesize\ttfamily \label{classtop_1_1_t_o_p_t_w_adce95dbc2b525cbbde383e0b950f874e} 
+void top.\+TOPTW.\+set\+Service\+Time (\begin{DoxyParamCaption}\item[{int}]{index}{, }\item[{double}]{service\+Time}{}\end{DoxyParamCaption})}
+
+
+
+Method to set the service time of a node. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & \\
+\hline
+{\em service\+Time} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classtop_1_1_t_o_p_t_w_a14a7fc055b07f3fb564666ad4ff12084}\index{top.TOPTW@{top.TOPTW}!setX@{setX}}
+\index{setX@{setX}!top.TOPTW@{top.TOPTW}}
+\doxysubsubsection{\texorpdfstring{setX()}{setX()}}
+{\footnotesize\ttfamily \label{classtop_1_1_t_o_p_t_w_a14a7fc055b07f3fb564666ad4ff12084} 
+void top.\+TOPTW.\+setX (\begin{DoxyParamCaption}\item[{int}]{index}{, }\item[{double}]{x}{}\end{DoxyParamCaption})}
+
+
+
+Method to set the x coordinate of a node. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & \\
+\hline
+{\em x} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classtop_1_1_t_o_p_t_w_a8318436161579a8b9050a657ca63c5e0}\index{top.TOPTW@{top.TOPTW}!setY@{setY}}
+\index{setY@{setY}!top.TOPTW@{top.TOPTW}}
+\doxysubsubsection{\texorpdfstring{setY()}{setY()}}
+{\footnotesize\ttfamily \label{classtop_1_1_t_o_p_t_w_a8318436161579a8b9050a657ca63c5e0} 
+void top.\+TOPTW.\+setY (\begin{DoxyParamCaption}\item[{int}]{index}{, }\item[{double}]{y}{}\end{DoxyParamCaption})}
+
+
+
+Method to set the y coordinate of a node. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & \\
+\hline
+{\em y} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/top/TOPTW.\+java\end{DoxyCompactItemize}
