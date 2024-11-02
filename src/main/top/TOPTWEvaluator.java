@@ -1,8 +1,15 @@
 package top;
 
+/**
+ * @brief Class to evaluate the solution of the TOPTW problem.
+ */
 public class TOPTWEvaluator {
     public static double NO_EVALUATED = -1.0;
 
+    /**
+     * @brief Method to evaluate the solution of the TOPTW problem.
+     * @param solution
+     */
     public void evaluate(TOPTWSolution solution) {
         /*CumulativeCVRP problem = solution.getProblem();
         double objectiveFunctionValue = 0.0;

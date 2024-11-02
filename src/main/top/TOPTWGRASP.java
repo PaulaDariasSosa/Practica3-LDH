@@ -11,6 +11,10 @@ public class TOPTWGRASP {
     private TOPTWSolution solution;
     private int solutionTime;
 
+    /**
+     * @brief Constructor of the class.
+     * @param solution
+     */
     public TOPTWGRASP(TOPTWSolution sol){
         this.solution = sol;
         this.solutionTime = 0;
@@ -37,7 +41,12 @@ public class TOPTWGRASP {
         end;
         return Solution;
     end Greedy Randomized Construction.*/
-    
+
+    /**
+     * @brief Method to execute the GRASP algorithm.
+     * @param maxIterations
+     * @param maxSizeRCL
+     */
     public void GRASP(int maxIterations, int maxSizeRCL) {
         double averageFitness = 0.0;
         double bestSolution = 0.0;
@@ -66,7 +75,12 @@ public class TOPTWGRASP {
         System.out.println(" --> MEDIA: "+averageFitness);
         System.out.println(" --> MEJOR SOLUCION: "+bestSolution);
     }
-    
+
+    /**
+     * @brief Method to select a random element from the RCL list.
+     * @param maxTRCL
+     * @return
+     */
     public int aleatorySelectionRCL(int maxTRCL) {
         SecureRandom r = new SecureRandom();
         byte bytes[] = new byte[20];
@@ -76,7 +90,12 @@ public class TOPTWGRASP {
        int posSelected = r.nextInt(high-low) + low;
        return posSelected;
     }
-    
+
+    /**
+     * @brief Method to select the best element from the RCL list.
+     * @param rcl
+     * @return
+     */
     public int fuzzySelectionBestFDRCL(ArrayList< double[] > rcl) {
         double[] membershipFunction = new double[rcl.size()];
         double maxSc = this.getMaxScore();
@@ -93,7 +112,13 @@ public class TOPTWGRASP {
         }
         return posSelected;
     }
-    
+
+    /**
+     * @brief Method to select a random element from the RCL list.
+     * @param rcl
+     * @param alpha
+     * @return
+     */
     public int fuzzySelectionAlphaCutRCL(ArrayList< double[] > rcl, double alpha) {
         ArrayList< double[] > rclAlphaCut = new ArrayList< double[] >();
         ArrayList< Integer > rclPos = new ArrayList< Integer >();
@@ -115,6 +140,10 @@ public class TOPTWGRASP {
         return posSelected;
     }
 
+    /**
+     * @brief Method to compute the greedy solution.
+     * @param maxSizeRCL
+     */
     public void computeGreedySolution(int maxSizeRCL) {
         // inicialización
         this.solution.initSolution();
@@ -195,7 +224,12 @@ public class TOPTWGRASP {
         }
         
     }
-    
+
+    /**
+     * @brief Method to update the solution.
+     * @param candidateSelected
+     * @param departureTimes
+     */
     public void updateSolution(double[] candidateSelected, ArrayList< ArrayList< Double > > departureTimes) {
         // Inserción del cliente en la ruta  return: cliente, ruta, predecesor, coste
         this.solution.setPredecessor((int)candidateSelected[0], (int)candidateSelected[2]);
@@ -227,6 +261,12 @@ public class TOPTWGRASP {
     }
 
     //return: cliente, ruta, predecesor, coste tiempo, score
+    /**
+     * @brief Method to evaluate the comprehensive evaluation of the solution.
+     * @param customers
+     * @param departureTimes
+     * @return
+     */
     public ArrayList< double[] > comprehensiveEvaluation(ArrayList<Integer> customers, ArrayList< ArrayList< Double > > departureTimes) {
         ArrayList< double[] > candidatesList = new ArrayList< double[] >();
         double[] infoCandidate = new double[5];
@@ -311,23 +351,43 @@ public class TOPTWGRASP {
 
         return candidatesList;        
     }
-    
+
+    /**
+     * @brief Method to get the solution.
+     * @return
+     */
     public TOPTWSolution getSolution() {
         return solution;
     }
 
+    /**
+     * @brief Method to set the solution.
+     * @param solution
+     */
     public void setSolution(TOPTWSolution solution) {
         this.solution = solution;
     }
 
+    /**
+     * @brief Method to get the solution time.
+     * @return
+     */
     public int getSolutionTime() {
         return solutionTime;
     }
 
+    /**
+     * @brief Method to set the solution time.
+     * @param solutionTime
+     */
     public void setSolutionTime(int solutionTime) {
         this.solutionTime = solutionTime;
     }
-    
+
+    /**
+     * @brief Method to get the max score.
+     * @return
+     */
     public double getMaxScore() {
         double maxSc = -1.0;
         for(int i = 0; i < this.solution.getProblem().getScore().length; i++) {

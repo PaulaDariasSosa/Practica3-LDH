@@ -1,7 +1,14 @@
 package top;
 
+/**
+ * @brief Main class to execute the program.
+ */
 public class mainTOPTW {
 
+    /**
+     * @brief Main method to execute the program.
+     * @param args
+     */
     public static void main(String[] args) {
         
         String[] instances = new String[29];

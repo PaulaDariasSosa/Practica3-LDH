@@ -7,8 +7,16 @@ import java.io.IOException;
 
 import es.ull.esit.utilities.ExpositoUtilities;
 
+/**
+ * @brief Class to read a TOPTW problem from a file.
+ */
 public class TOPTWReader {
-    
+
+    /**
+     * @brief Read a TOPTW problem from a file.
+     * @param filePath Path to the file.
+     * @return TOPTW problem.
+     */
     public static TOPTW readProblem(String filePath) {
         TOPTW problem = null;
         BufferedReader reader = null;

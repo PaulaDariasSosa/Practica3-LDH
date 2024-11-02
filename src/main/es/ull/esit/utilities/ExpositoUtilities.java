@@ -14,12 +14,22 @@ import java.util.Iterator;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+/**
+ * @class ExpositoUtilities
+ * @brief Class to store the utilities of the project.
+ */
 public class ExpositoUtilities {
 
     public static final int DEFAULT_COLUMN_WIDTH = 10;
     public static final int ALIGNMENT_LEFT = 1;
     public static final int ALIGNMENT_RIGHT = 2;
 
+    /**
+     * @brief Method to get the first appearance of an element in a vector.
+     * @param vector
+     * @param element
+     * @return The first appearance of the element in the vector.
+     */
     private static int getFirstAppearance(int[] vector, int element) {
         for (int i = 0; i < vector.length; i++) {
             if (vector[i] == element) {
@@ -29,6 +39,12 @@ public class ExpositoUtilities {
         return -1;
     }
 
+    /**
+     * @brief Method to get the last appearance of an element in a vector.
+     * @param vector
+     * @param element
+     * @return The last appearance of the element in the vector.
+     */
     public static void printFile(String file) {
         BufferedReader reader = null;
         try {
@@ -48,6 +64,11 @@ public class ExpositoUtilities {
         }
     }
 
+    /**
+     * @brief Method to simplify a string.
+     * @param string
+     * @return The simplified string.
+     */
     public static String simplifyString(String string) {
         string = string.replaceAll("\t", " ");
         for (int i = 0; i < 50; i++) {
@@ -57,6 +78,12 @@ public class ExpositoUtilities {
         return string;
     }
 
+    /**
+     * @brief Method to multiply two matrices.
+     * @param a
+     * @param b
+     * @return The result of the multiplication of the matrices.
+     */
     public static double[][] multiplyMatrices(double a[][], double b[][]) {
         if (a.length == 0) {
             return new double[0][0];
@@ -78,6 +105,12 @@ public class ExpositoUtilities {
         return ans;
     }
 
+    /**
+     * @brief Method to write a text to a file.
+     * @param file
+     * @param text
+     * @throws IOException
+     */
     public static void writeTextToFile(String file, String text) throws IOException {
         BufferedWriter writer = new BufferedWriter(new FileWriter(file));
         writer.write(text);
@@ -85,6 +118,11 @@ public class ExpositoUtilities {
         writer.close();
     }
 
+    /**
+     * @brief Method to get the format of a string.
+     * @param string
+     * @return The format of the string.
+     */
     public static String getFormat(String string) {
         if (!ExpositoUtilities.isInteger(string)) {
             if (ExpositoUtilities.isDouble(string)) {
@@ -95,6 +133,11 @@ public class ExpositoUtilities {
         return string;
     }
 
+    /**
+     * @brief Method to get the format of a double.
+     * @param value
+     * @return The format of the double.
+     */
     public static String getFormat(double value) {
         DecimalFormat decimalFormatter = new DecimalFormat("0.000");
         DecimalFormatSymbols symbols = new DecimalFormatSymbols();
@@ -103,6 +146,12 @@ public class ExpositoUtilities {
         return decimalFormatter.format(value);
     }
 
+    /**
+     * @brief Method to get the format of a double.
+     * @param value
+     * @param zeros
+     * @return The format of the double.
+     */
     public static String getFormat(double value, int zeros) {
         String format = "0.";
         for (int i = 0; i < zeros; i++) {
@@ -115,10 +164,23 @@ public class ExpositoUtilities {
         return decimalFormatter.format(value);
     }
 
+    /**
+     * @brief Method to get the format of a string.
+     * @param string
+     * @param width
+     * @return The format of the string.
+     */
     public static String getFormat(String string, int width) {
         return ExpositoUtilities.getFormat(string, width, ExpositoUtilities.ALIGNMENT_RIGHT);
     }
 
+    /**
+     * @brief Method to get the format of a string.
+     * @param string
+     * @param width
+     * @param alignment
+     * @return The format of the string.
+     */
     public static String getFormat(String string, int width, int alignment) {
         String format = "";
         if (alignment == ExpositoUtilities.ALIGNMENT_LEFT) {
@@ -132,6 +194,12 @@ public class ExpositoUtilities {
         return String.format(format, (Object[]) data);
     }
 
+    /**
+     * @brief Method to get the format of a string.
+     * @param strings
+     * @param width
+     * @return The format of the string.
+     */
     public static String getFormat(ArrayList<String> strings, int width) {
         String format = "";
         for (int i = 0; i < strings.size(); i++) {
@@ -144,6 +212,11 @@ public class ExpositoUtilities {
         return String.format(format, (Object[]) data);
     }
 
+    /**
+     * @brief Method to get the format of a string.
+     * @param strings
+     * @return The format of the string.
+     */
     public static String getFormat(ArrayList<Integer> strings) {
         String format = "";
         for (int i = 0; i < strings.size(); i++) {
@@ -156,6 +229,12 @@ public class ExpositoUtilities {
         return String.format(format, (Object[]) data);
     }
 
+    /**
+     * @brief Method to get the format of a string.
+     * @param strings
+     * @param width
+     * @return The format of the string.
+     */
     public static String getFormat(String[] strings, int width) {
         int[] alignment = new int[strings.length];
         Arrays.fill(alignment, ExpositoUtilities.ALIGNMENT_RIGHT);
@@ -163,8 +242,14 @@ public class ExpositoUtilities {
         Arrays.fill(widths, width);
         return ExpositoUtilities.getFormat(strings, widths, alignment);
     }
-    
-        public static String getFormat(String[][] matrixStrings, int width) {
+
+    /**
+     * @brief Method to get the format of a string.
+     * @param strings
+     * @param width
+     * @return The format of the string.
+     */
+    public static String getFormat(String[][] matrixStrings, int width) {
         String result = "";
         for (int i = 0; i < matrixStrings.length; i++) {
             String[] strings = matrixStrings[i];
@@ -180,6 +265,22 @@ public class ExpositoUtilities {
         return result;
     }
 
+    /**
+     * @brief Method to get the format of a string.
+     * @param strings
+     * @return The format of the string.
+     */
+    public static String getFormat(String[] strings, int[] width) {
+        int[] alignment = new int[strings.length];
+        Arrays.fill(alignment, ExpositoUtilities.ALIGNMENT_RIGHT);
+        return ExpositoUtilities.getFormat(strings, width, alignment);
+    }
+
+    /**
+     * @brief Method to get the format of a string.
+     * @param strings
+     * @return The format of the string.
+     */
     public static String getFormat(String[] strings) {
         int[] alignment = new int[strings.length];
         Arrays.fill(alignment, ExpositoUtilities.ALIGNMENT_RIGHT);
@@ -188,12 +289,26 @@ public class ExpositoUtilities {
         return ExpositoUtilities.getFormat(strings, widths, alignment);
     }
 
+    /**
+     * @brief Method to get the format of a string.
+     * @param strings
+     * @param width
+     * @param alignment
+     * @return The format of the string.
+     */
     public static String getFormat(String[] strings, int[] width) {
         int[] alignment = new int[strings.length];
         Arrays.fill(alignment, ExpositoUtilities.ALIGNMENT_RIGHT);
         return ExpositoUtilities.getFormat(strings, width, alignment);
     }
 
+    /**
+     * @brief Method to get the format of a string.
+     * @param strings
+     * @param width
+     * @param alignment
+     * @return The format of the string.
+     */
     public static String getFormat(String[] strings, int[] width, int[] alignment) {
         String format = "";
         for (int i = 0; i < strings.length; i++) {
@@ -210,6 +325,11 @@ public class ExpositoUtilities {
         return String.format(format, (Object[]) data);
     }
 
+    /**
+     * @brief Method to know if a string is an integer.
+     * @param str
+     * @return True if the string is an integer, false otherwise.
+     */
     public static boolean isInteger(String str) {
         try {
             Integer.parseInt(str);
@@ -219,6 +339,11 @@ public class ExpositoUtilities {
         return false;
     }
 
+    /**
+     * @brief Method to know if a string is a double.
+     * @param str
+     * @return True if the string is a double, false otherwise.
+     */
     public static boolean isDouble(String str) {
         try {
             Double.parseDouble(str);
@@ -228,6 +353,11 @@ public class ExpositoUtilities {
         return false;
     }
 
+    /**
+     * @brief Method to know is a matrix is acyclic.
+     * @param distanceMatrix
+     * @return True if the matrix is acyclic, false otherwise.
+     */
     public static boolean isAcyclic(int[][] distanceMatrix) {
         int numRealTasks = distanceMatrix.length - 2;
         int node = 1;
@@ -241,6 +371,12 @@ public class ExpositoUtilities {
         return true;
     }
 
+    /**
+     * @brief Method to know if there is a path between two nodes.
+     * @param distanceMatrix
+     * @param node
+     * @return True if there is a path between the nodes, false otherwise.
+     */
     public static boolean thereIsPath(int[][] distanceMatrix, int node) {
         HashSet<Integer> visits = new HashSet<>();
         HashSet<Integer> noVisits = new HashSet<>();

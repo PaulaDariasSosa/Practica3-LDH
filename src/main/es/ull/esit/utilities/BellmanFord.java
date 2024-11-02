@@ -2,43 +2,47 @@ package es.ull.esit.utilities;
 
 import java.util.ArrayList;
 
+/**
+ * @class BellmanFord
+ * @brief Class to solve the Bellman-Ford algorithm.
+ */
 public class BellmanFord {
 
     /**
-     *
+     * @brief Constant to represent infinity.
      */
     private static final int INFINITY = 999999;
     /**
-     *
+     * @brief Matrix to store the distances between nodes.
      */
     private final int[][] distanceMatrix;
     /**
-     *
+     * @brief Lists to store the edges of the graph.
      */
     private ArrayList<Integer> edges1 = null;
     /**
-     *
+     * @brief Lists to store the edges of the graph.
      */
     private ArrayList<Integer> edges2 = null;
     /**
-     *
+     * @brief Number of nodes in the graph.
      */
     private final int nodes;
     /**
-     *
+     * @brief List to store the path between the nodes.
      */
     private final ArrayList<Integer> path;
     /**
-     *
+     * @brief Array to store the distances between nodes.
      */
     private int[] distances = null;
     /**
-     *
+     * @brief Value of the path between the nodes.
      */
     private int value;
 
     /**
-     *
+     * @brief Constructor of the class.
      * @param distanceMatrix
      * @param nodes
      * @param path
@@ -52,7 +56,7 @@ public class BellmanFord {
     }
 
     /**
-     *
+     * @brief Method to calculate the edges of the graph.
      */
     private void calculateEdges() {
         this.edges1 = new ArrayList<>();
@@ -68,23 +72,23 @@ public class BellmanFord {
     }
 
     /**
-     *
-     * @return
+     * @brief Method to get the distances between nodes.
+     * @return Array with the distances between nodes.
      */
     public int[] getDistances() {
         return this.distances;
     }
 
     /**
-     *
-     * @return
+     * @brief Method to get the value of the path between the nodes.
+     * @return Value of the path between the nodes.
      */
     public int getValue() {
         return this.value;
     }
 
     /**
-     *
+     * @brief Method to solve the problem.
      */
     public void solve() {
         int numEdges = this.edges1.size();
